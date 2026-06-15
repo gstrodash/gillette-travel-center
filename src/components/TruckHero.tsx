@@ -57,23 +57,30 @@ export default function TruckHero() {
       const iw = img.width;
       const ih = img.height;
 
-      // Zoom out slightly so it's not touching the edges (increased to 0.9 for wider view)
-      const zoomFactor = 0.9; 
+      const zoomFactor = 0.9;
       const finalScale = (cw / iw) * zoomFactor;
       const newWidth = iw * finalScale;
       const newHeight = ih * finalScale;
-      
-      // Center perfectly
+
       const offsetX = (cw - newWidth) / 2;
       const offsetY = (ch - newHeight) / 2;
 
       ctx.clearRect(0, 0, cw, ch);
-      
-      // Improve image quality
       ctx.imageSmoothingEnabled = true;
       ctx.imageSmoothingQuality = 'high';
-      
       ctx.drawImage(img, offsetX, offsetY, newWidth, newHeight);
+
+      // Strip near-black pixels so screen blend produces clean transparency
+      const imageData = ctx.getImageData(0, 0, cw, ch);
+      const data = imageData.data;
+      const threshold = 40;
+      for (let i = 0; i < data.length; i += 4) {
+        const r = data[i], g = data[i + 1], b = data[i + 2];
+        if (r < threshold && g < threshold && b < threshold) {
+          data[i + 3] = 0; // fully transparent
+        }
+      }
+      ctx.putImageData(imageData, 0, 0);
     };
 
     // Scroll mapping logic with Smooth Interpolation
@@ -171,7 +178,7 @@ export default function TruckHero() {
               backgroundColor: 'transparent',
               // Crushing the contrast ensures the video's background is pure black, eliminating the faint bounding box
               // Boosting brightness slightly makes the truck easier to see
-              filter: 'contrast(1.5) brightness(1.1)'
+              filter: 'brightness(1.6)'
             }}
           />
 
@@ -183,7 +190,11 @@ export default function TruckHero() {
           */}
           <div style={{
             position: 'absolute', inset: 0, zIndex: 6, pointerEvents: 'none',
-            background: 'linear-gradient(to right, #000 0%, #000 5%, transparent 15%, transparent 85%, #000 95%, #000 100%)'
+            background: 'linear-gradient(to right, #000 0%, #000 8%, transparent 28%, transparent 72%, #000 92%, #000 100%)'
+          }} />
+          <div style={{
+            position: 'absolute', inset: 0, zIndex: 6, pointerEvents: 'none',
+            background: 'linear-gradient(to bottom, #000 0%, transparent 25%, transparent 75%, #000 100%)'
           }} />
 
         </div>

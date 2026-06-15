@@ -5,7 +5,7 @@ export default function Location() {
         
         <div className="reveal">
           <div style={{ marginBottom: '1.5rem' }}>
-            <span className="hero-tag" style={{ color: 'var(--color-accent)', borderColor: 'var(--color-accent)', margin: 0 }}>Location</span>
+            <span className="hero-tag" style={{ color: 'var(--color-accent)', borderColor: 'var(--color-accent)', margin: 0, fontFamily: 'var(--font-editorial)' }}>Location</span>
           </div>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '1rem', fontFamily: 'var(--font-heading)', fontWeight: 400, lineHeight: 1.1 }}>
             Find Us in<br />Gillette
@@ -33,7 +33,7 @@ export default function Location() {
       </div>
 
       {/* PointOneAI Credit replacing the old white footer */}
-      <div style={{ textAlign: 'center', color: 'rgba(255,255,255,0.4)', marginTop: '6rem', fontSize: '0.9rem', fontFamily: 'var(--font-primary)', letterSpacing: '2px', textTransform: 'uppercase' }}>
+      <div style={{ textAlign: 'center', color: 'rgba(255,255,255,0.15)', marginTop: '6rem', fontSize: '0.9rem', fontFamily: 'var(--font-primary)', letterSpacing: '2px', textTransform: 'uppercase' }}>
         Designed by PointOneAI
       </div>
     </section>

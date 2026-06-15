@@ -14,7 +14,7 @@ main {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 100px;
-  background: transparent;
+  background: #000;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -22,8 +22,7 @@ main {
 }
 
 .header.scrolled {
-  background: rgba(12, 10, 9, 0.8);
-  backdrop-filter: blur(20px);
+  background: #000;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 

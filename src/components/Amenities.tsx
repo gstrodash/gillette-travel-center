@@ -2,13 +2,13 @@ export default function Amenities() {
   return (
     <section id="amenities" className="section" style={{ position: 'relative', overflow: 'hidden', padding: '6rem 0' }}>
       
-      <img src="/pronghorn_icon.png" alt="" style={{ position: 'absolute', top: '5%', left: '-5%', width: '450px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(-5deg)' }} />
-      <img src="/cowboy_bull_icon.png" alt="" style={{ position: 'absolute', bottom: '5%', right: '-2%', width: '550px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(5deg)' }} />
+      <img src="/pronghorn_icon.png" alt="" style={{ position: 'absolute', top: '0%', left: '2%', width: '300px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(-5deg)' }} />
+      <img src="/cowboy_bull_icon.png" alt="" style={{ position: 'absolute', bottom: '3%', right: '3%', width: '380px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(5deg)' }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ marginBottom: '6rem', textAlign: 'center' }} className="reveal">
-          <span className="hero-tag" style={{ margin: '0 auto 1rem auto' }}>The Experience</span>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', maxWidth: '800px', lineHeight: 1, margin: '0 auto' }}>
+          <p style={{ fontFamily: 'var(--font-editorial)', color: 'var(--color-accent)', fontSize: '1.2rem', fontWeight: 600, marginBottom: '0.75rem', letterSpacing: '1px' }}>The Experience</p>
+<h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', maxWidth: '800px', lineHeight: 1, margin: '0 auto' }}>
             BUILT FOR THE ROAD.
           </h2>
         </div>
