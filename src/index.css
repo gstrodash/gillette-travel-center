@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;500;700;800&family=Rokkitt:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Official Gillette Travel Center Brand Palette - Light Theme */
+  --color-primary: #513629; /* Brand Brown */
+  --color-on-primary: #ffffff;
+  --color-secondary: #f4f5f7;
+  --color-on-secondary: #171718;
+  --color-accent: #fec52d; /* High-Visibility Yellow */
+  --color-accent-light: #ffd566;
+  
+  --color-background: #ffffff;
+  --color-surface: #f4f5f7;
+  --color-foreground: #171718;
+  --color-muted: #666666;
+  --color-border: rgba(0, 0, 0, 0.08);
+  
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Rye', serif;
+  --font-display: 'Rye', serif;
+  --font-editorial: 'Rokkitt', serif;
+  
+  /* Clean, modern radiuses */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 32px;
+  
+  --shadow-subtle: 0 4px 20px rgba(0,0,0,0.3);
+  
+  --transition-fast: 0.2s ease-in-out;
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.02em; 
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-on-primary);
+  color: var(--color-primary);
+  padding: 1.2rem 2.5rem;
+  border-radius: 100px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  letter-spacing: -0.01em;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background-color: var(--color-accent-light);
+  color: var(--color-primary);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--color-foreground);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-foreground);
+  color: var(--color-primary);
+  border-color: var(--color-foreground);
+}
+
+/* Animations */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  animation: revealUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
