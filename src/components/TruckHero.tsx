@@ -46,7 +46,7 @@ export default function TruckHero() {
       renderFrame(Math.max(0, currentFrameIndex));
     };
 
-    let currentFrameIndex = 0;
+    const currentFrameIndex = 0;
 
     const renderFrame = (index: number) => {
       const img = imagesRef.current[index];
