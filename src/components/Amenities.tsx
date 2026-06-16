@@ -84,7 +84,7 @@ export default function Amenities() {
           <h4 style={{ fontSize: '1.5rem', color: 'var(--color-muted)', fontFamily: 'var(--font-heading)', fontWeight: 400, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '3rem' }}>Proudly Featuring</h4>
           <div style={{ 
             display: 'flex', 
-            flexWrap: 'nowrap', 
+            flexWrap: 'wrap', 
             justifyContent: 'center', 
             alignItems: 'center', 
             gap: '3rem', 
