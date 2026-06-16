@@ -23,11 +23,13 @@ export default function Location() {
         </div>
         
         <div className="reveal" style={{ animationDelay: '0.2s' }}>
-          <img 
-            src="https://gillettetravelctr.com/wp-content/uploads/2026/05/gtc_map.png" 
-            alt="Gillette Travel Center Map" 
-            style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius-lg)', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }} 
-          />
+          <a href="https://maps.app.goo.gl/BtBqQRkwYgpyvJFKA" target="_blank" rel="noopener noreferrer" style={{ display: 'block', transition: 'transform 0.3s ease' }} onMouseOver={e => e.currentTarget.style.transform = 'scale(1.02)'} onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}>
+            <img 
+              src="https://gillettetravelctr.com/wp-content/uploads/2026/05/gtc_map.png" 
+              alt="Gillette Travel Center Map" 
+              style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 'var(--radius-lg)', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', cursor: 'pointer' }} 
+            />
+          </a>
         </div>
 
       </div>
