@@ -4,9 +4,7 @@ export default function Location() {
       <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
         
         <div className="reveal">
-          <div style={{ marginBottom: '1.5rem' }}>
-            <span className="hero-tag" style={{ color: 'var(--color-accent)', borderColor: 'var(--color-accent)', margin: 0, fontFamily: 'var(--font-editorial)' }}>Location</span>
-          </div>
+          <p style={{ fontFamily: 'var(--font-editorial)', color: 'var(--color-accent)', fontSize: '1.4rem', fontWeight: 600, marginBottom: '1.5rem', letterSpacing: '1px', textTransform: 'uppercase' }}>Location</p>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '1rem', fontFamily: 'var(--font-heading)', fontWeight: 400, lineHeight: 1.1 }}>
             Find Us in<br />Gillette
           </h2>
