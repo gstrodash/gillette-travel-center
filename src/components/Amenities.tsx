@@ -94,12 +94,13 @@ export default function Amenities() {
               { src: '/hotstuff.png', alt: 'Hot Stuff Pizza' },
               { src: '/krispykrunchy.png', alt: 'Krispy Krunchy Chicken' },
               { src: '/bluebunny.png', alt: 'Blue Bunny Ice Cream' },
-              { src: '/media__1781584199724.png', alt: 'Featured Logo' },
-              { src: '/media__1781584238332.png', alt: 'Featured Logo' },
-              { src: '/media__1781584280366.png', alt: 'Featured Logo' },
-              { src: '/media__1781584883662.png', alt: 'Featured Logo' },
-              { src: '/media__1781584907189.png', alt: 'Featured Logo' },
-              { src: '/media__1781585186857.png', alt: 'Featured Logo' },
+              { src: '/partner_logo_1.png', alt: 'Featured Logo' },
+              { src: '/partner_logo_2.png', alt: 'Featured Logo' },
+              { src: '/partner_logo_3.png', alt: 'Featured Logo' },
+              { src: '/rustybucket.png', alt: 'The Rusty Bucket' },
+              { src: '/wyomingfudge.png', alt: 'Wyoming Fudge Co' },
+              { src: '/cakepopkitchen.png', alt: 'Cake Pop Kitchen' },
+              { src: '/lindakays.png', alt: 'Linda Kays' },
             ].map((logo, idx) => (
               <img 
                 key={idx}
