@@ -2,8 +2,8 @@ export default function Amenities() {
   return (
     <section id="amenities" className="section" style={{ position: 'relative', overflow: 'hidden', padding: '6rem 0' }}>
       
-      <img src="/pronghorn_icon.png" alt="" style={{ position: 'absolute', top: '0%', left: '2%', width: '450px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(-5deg)' }} />
-      <img src="/cowboy_bull_icon.png" alt="" style={{ position: 'absolute', bottom: '3%', right: '3%', width: '550px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(5deg)' }} />
+      <img src="/pronghorn_icon.png" alt="" style={{ position: 'absolute', top: '0%', left: '-2%', width: '380px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(-5deg)' }} />
+      <img src="/cowboy_bull_icon.png" alt="" style={{ position: 'absolute', bottom: '3%', right: '-2%', width: '480px', opacity: 0.1, filter: 'invert(1)', mixBlendMode: 'multiply', pointerEvents: 'none', transform: 'rotate(5deg)' }} />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ marginBottom: '6rem', textAlign: 'center' }} className="reveal">
@@ -107,7 +107,7 @@ export default function Amenities() {
                 src={logo.src} 
                 alt={logo.alt} 
                 style={{ 
-                  height: '110px', 
+                  height: '90px', 
                   width: 'auto', 
                   maxWidth: '100%',
                   flexShrink: 1,
