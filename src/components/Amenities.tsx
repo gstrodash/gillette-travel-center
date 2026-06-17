@@ -94,8 +94,6 @@ export default function Amenities() {
               { src: '/hotstuff.png', alt: 'Hot Stuff Pizza' },
               { src: '/krispykrunchy.png', alt: 'Krispy Krunchy Chicken' },
               { src: '/bluebunny.png', alt: 'Blue Bunny Ice Cream' },
-              { src: '/partner_logo_1.png', alt: 'Featured Logo' },
-              { src: '/partner_logo_3.png', alt: 'Featured Logo' },
               { src: '/rustybucket.png', alt: 'The Rusty Bucket' },
               { src: '/wyomingfudge.png', alt: 'Wyoming Fudge Co' },
               { src: '/cakepopkitchen.png', alt: 'Cake Pop Kitchen' },
