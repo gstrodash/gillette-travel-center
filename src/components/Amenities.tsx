@@ -98,7 +98,6 @@ export default function Amenities() {
               { src: '/partner_logo_3.png', alt: 'Featured Partner' },
               { src: '/rustybucket.png', alt: 'The Rusty Bucket' },
               { src: '/wyomingfudge.png', alt: 'Wyoming Fudge Co' },
-              { src: '/cakepopkitchen.png', alt: 'Cake Pop Kitchen' },
               { src: '/lindakays.png', alt: 'Linda Kays' },
             ].map((logo, idx) => (
               <img 
